@@ -66,7 +66,6 @@ minima:
         platform: google_scholar,
         user_url: "https://scholar.google.com/citations?hl=en&user=5n6GxWoAAAAJ&view_op=list_works&sortby=pubdate",
       }
-    - { platform: ORCID, user_url: "https://orcid.org/0000-0002-1915-0565" }
   #  - { platform: keybase,        user_url: "https://keybase.io/jekyll" }
   #  - { platform: linkedin,       user_url: "https://www.linkedin.com/in/jekyll" }
   #  - { platform: microdotblog,   user_url: "https://micro.blog/jekyll" }
