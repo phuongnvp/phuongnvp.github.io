@@ -239,7 +239,6 @@
     var el = $("#visit-count");
     if (!el) return;
 
-    // CHANGE THESE TWO:
     var NAMESPACE = "nguyenvanphuong";
     var COUNTER_NAME = "phuongnvp.github.io";
 
