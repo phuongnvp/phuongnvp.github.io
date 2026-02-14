@@ -586,6 +586,44 @@ hr {
 }
 
 /* ------------------------------
+   Visit Counter
+   ------------------------------ */
+.visit-counter {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  padding: 0.35rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: color-mix(in srgb, var(--surface) 92%, var(--accent-soft) 8%);
+  box-shadow: 0 8px 18px var(--shadow);
+}
+
+.visit-counter__label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+
+.visit-counter__value {
+  font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  font-weight: 700;
+  color: var(--text);
+  padding: 0.1rem 0.45rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid color-mix(in srgb, var(--accent) 18%, var(--border) 82%);
+}
+
+html[data-theme="dark"] .visit-counter__value {
+  background: color-mix(in srgb, var(--surface) 80%, black 20%);
+}
+
+/* ------------------------------
    Content Blocks (for inner pages)
    ------------------------------ */
 .page-header {

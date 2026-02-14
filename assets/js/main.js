@@ -235,11 +235,36 @@
     });
   }
 
+  function initVisitCounter() {
+    var el = $("#visit-count");
+    if (!el) return;
+
+    // CHANGE THESE TWO:
+    var NAMESPACE = "nguyenvanphuong";
+    var COUNTER_NAME = "phuongnvp.github.io";
+
+    fetch(
+      "https://api.counterapi.dev/v1/" + NAMESPACE + "/" + COUNTER_NAME + "/up",
+    )
+      .then(function (res) {
+        return res.json();
+      })
+      .then(function (data) {
+        var value = data && (data.count ?? data.value);
+        el.textContent =
+          value !== undefined && value !== null ? String(value) : "—";
+      })
+      .catch(function () {
+        el.textContent = "—";
+      });
+  }
+
   // --- Run ---
   document.addEventListener("DOMContentLoaded", function () {
     setYear();
     initTheme();
     hydrateProfileLinks();
     initCollapsibleSections();
+    initVisitCounter();
   });
 })();
