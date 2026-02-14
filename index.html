@@ -1,191 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Lab website</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Our lab at Hanoi University of Pharmacy"
+    <meta charset="UTF-8" />
+    <title>Homepage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="This is my Homepage." />
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://phuongnvp.github.io/" />
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="My Homepage" />
+    <meta property="og:description" content="This is my homepage" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/img/og-image-placeholder.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="My Homepage" />
+    <meta name="twitter:description" content="This is my homepage." />
+    <meta name="twitter:image" content="assets/img/og-image-placeholder.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
     />
-    <meta name="author" content="" />
-    <!-- Le styles -->
-    <link href="css/bootstrap.min.css" rel="stylesheet" />
-    <link href="css/bootstrap-responsive.min.css" rel="stylesheet" />
-    <link href="css/theme.css" rel="stylesheet" />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- JSON-LD Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Nguyen Van Phuong",
+        "jobTitle": "PhD Student at University of Vienna",
+        "url": "https://phuongnvp.github.io/",
+        "sameAs": [
+          "https://scholar.google.com/citations?user=5n6GxWoAAAAJ&hl=en",
+          "https://orcid.org/0000-0002-1915-0565",
+          "https://github.com/phuongnvp",
+          "https://www.linkedin.com/in/phuongnvp1011/"
+        ]
+      }
+    </script>
   </head>
   <body>
-    <div class="container">
-      <header class="jumbotron subhead" id="overview">
-        <p class="lead">Hanoi University of Pharmacy</p>
-        <h1>Welcome to our Natural Products lab!</h1>
-      </header>
-      <div class="masthead">
-        <div class="navbar">
-          <div class="navbar-inner">
-            <div class="container">
-              <ul class="nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="people.html">People</a></li>
-                <li><a href="research.html">Research</a></li>
-                <li><a href="publications.html">Publications</a></li>
-                <li><a href="news.html">News</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About me</a></li>
-              </ul>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="site-branding">
+          <a href="index.html" class="site-title"></a>
+          <p class="site-quote">
+            "Things are what they are, and whatever will be, will be."
+          </p>
+        </div>
+
+        <nav class="site-nav" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="pages/publications.html">Publications</a></li>
+            <li><a href="pages/projects.html">Projects</a></li>
+            <li><a href="pages/teaching.html">Teaching</a></li>
+            <li><a href="pages/notes.html">Notes</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <!-- Hero -->
+      <section class="hero section">
+        <div class="container hero-inner">
+          <div class="hero-text">
+            <h1>About me</h1>
+            <p class="lead">
+              My name is Nguyen Van Phuong. Currently, I am a PhD student at
+              University of Vienna under the supervision of
+              <a
+                href="https://pharmtox.univie.ac.at/research-and-open-positions/molecular-modelling-of-ion-channels-prof-weinzinger/"
+                >Assoc. Prof. Priv. Doz. Dr. Anna Weinzinger</a
+              >. My research focuses on lipid modulation of membrane proteins
+              and strategies to target these proteins using an integrated
+              approach that combines molecular dynamics simulations with AI/ML
+              workflows. I believe that interesting discoveries will happen when
+              we combine knowledge from various areas. Therefore, I'm really
+              excited in interdisciplinary environments where chemistry and
+              biology meets data science. It's fascinating to see how computer
+              science, chemistry, biology, and other fields can work together to
+              tackle challenging questions in drug discovery and development.
+              <br />
+              <br />
+              &#9; When I'm not working on research, I love getting lost in good
+              novels and movies. Some of my favorites books are
+              <i>Game of Thrones</i> by George R. R. Martin,
+              <i>The Three-Body Problem</i> by Liu Cixin and
+              <i>The Sorrow of War</i> by Bao Ninh. In cinema, I find myself
+              drawn to movies like <i>The Whale</i> (2022),
+              <i>Before</i> Triology (1995-2013) and
+              <i>The Social Network</i> (2010).
+            </p>
+            <div class="button-group">
+              <a class="button primary" href="assets/cv.pdf"
+                >Download CV (PDF)</a
+              >
+              <a class="button secondary" href="#background">Background</a>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span12">
-          <div id="main-carousel" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="item active">
-                <img src="images/group.jpg" class="carousel-image" alt="" />
-                <div class="carousel-caption">
-                  <h4>Lab Photos</h4>
-                  <!-- -->
-                  <p></p>
-                </div>
-              </div>
-              <div class="item">
-                <img
-                  src="images/pharmacognosy.jpg"
-                  class="carousel-image"
-                  alt=""
-                />
-                <div class="carousel-caption">
-                  <h4>Department of Pharmacognosy</h4>
-                  <p></p>
-                </div>
-              </div>
-              <div class="item">
-                <img src="images/Hup.jpg" class="carousel-image" alt="" />
-                <div class="carousel-caption">
-                  <h4>Hanoi University of Pharmacy</h4>
-                  <p></p>
-                </div>
-              </div>
-            </div>
-            <a
-              class="left carousel-control"
-              href="#main-carousel"
-              data-slide="prev"
-              >‹</a
-            >
-            <a
-              class="right carousel-control"
-              href="#main-carousel"
-              data-slide="next"
-              >›</a
-            >
+
+          <div class="hero-image">
+            <img
+              src="assets/img/headshot-placeholder.jpg"
+              alt="Portrait of me"
+            />
           </div>
         </div>
-      </div>
-      <hr />
-      <div class="container-fluid">
-        <div class="row-fluid marketing">
-          <div class="span12">
-            <p style="text-align: justify">
-              Welcome to <b>Natural Products lab</b> at Department of
-              Pharmacognosy, Hanoi University of Pharmacy. Our interdisciplinary
-              research combines computational methods, including molecular
-              modeling and machine learning alongside experimental approaches to
-              unlock the therapeutic potential of natural products.
-              <br />
-              <br />
-              We welcome all students passionate about natural products research
-              and drug discovery whether you're interested in computational
-              approaches, experimental work, or both. Research experience is not
-              required as long as your enthusiasm to learn and explore the
-              fascinating world of natural products.
-              <br />
-              <br />
-              Current students at all levels (undergraduate, graduate, and
-              postdoctoral researchers) interested in joining our lab are
-              encouraged to contact
-              <a href="mailto:hangnt@hup.edu.vn">Prof. Nguyen Thu Hang</a> or
-              <a href="mailto:phuongnv@hup.edu.vn">Nguyen Van Phuong</a>
-            </p>
-            <br />
-          </div>
-          <div class="row-fluid">
-            <hr />
-            <h2 class="centered">Recent News</h2>
-            <hr />
-          </div>
-          <div class="span4 feature-item">
-            <h5><span class="date"> Dec 30, 2024 </span></h5>
-            <h4 class="feature-heading">
-              <a href="news1.html"> Exciting News: New Website Launch! </a>
-              <br />
-            </h4>
-            <hr />
-            <div class="centered">
-              <a href="news1.html"> <img src="thumbs/group.jpg" alt="" /></a>
-            </div>
-            <hr />
-            <p style="text-align: justify">
-              We are pleased to announce the launch of our laboratory's new
-              website dedicated to drug discovery from natural products
-              research. This platform will serve as a hub for sharing our latest
-              research, publications, and insights in the field of drug
-              discovery from natural products. Visit us at
-              <a href="https://phuongnvp.github.io">phuongnvp.github.io</a> to
-              learn more about our research and stay updated on our latest
-              findings.
-            </p>
-            <br />
-            <br />
+      </section>
+
+      <!-- Research Pillars -->
+      <section class="section">
+        <div class="container">
+          <h2>Research Interests</h2>
+          <div class="card-grid three">
+            <article class="card">
+              <h3>Membrane-Protein Modulation</h3>
+              <p>
+                Using molecular dynamics simulations to investigate how lipid
+                environments shape protein structure, dynamics, and function,
+                with the ultimate aim of enabling more selective and effective
+                drug discovery strategies targeting these proteins.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>AI-Driven Drug Discovery</h3>
+              <p>
+                Using advanced architectures, such as LLMs, VAEs, and GFlowNets
+                to navigate vast chemical spaces for virtual screening,
+                <i>de novo</i> design and lead optimization, as well as enhance
+                the predictive accuracy of classical QSAR and molecular docking.
+              </p>
+            </article>
+
+            <article class="card">
+              <h3>Machine Learning in Chemistry</h3>
+              <p>
+                Using machine learning to streamline complex laboratory
+                workflows in chemistry, such as multi-step retrosynthesis
+                planning, proposing reaction mechanisms, suggesting HPLC
+                gradient program and structure elucidation from spectral data.
+              </p>
+            </article>
           </div>
         </div>
-      </div>
-    </div>
-    <footer id="footer">
-      <div class="container-fluid">
-        <div class="row-fluid">
-          <div class="span5">
-            <h3>Contact Information</h3>
-            <p><b>Office Hours: </b>Monday-Friday (8.00am - 5.00pm)</p>
-            <p><b>Phone: </b>097-231-7254</p>
-            <p>
-              <b>Email: </b
-              ><a href="mailto:phuongnv@hup.edu.vn">phuongnv@hup.edu.vn</a>
-            </p>
+      </section>
+
+      <!-- Background -->
+      <section id="background" class="section alt">
+        <div class="container">
+          <h2>Background</h2>
+
+          <div class="subsection">
+            <h3><i style="font-size: 120%">Education</i></h3>
+            <ul class="timeline">
+              <li>
+                <strong>PhD in Pharmaceutical Sciences</strong> - University of
+                Vienna<br />
+                <i>Thesis</i>: Lipid Modulation of Proteins.<br />
+                <i>Supervisor</i>: Assoc. Prof. Anna Weinzinger
+              </li>
+              <li>
+                <strong>MSc in Pharmacy</strong> - Hanoi University of
+                Pharmacy<br />
+                <i>Supervisor</i>: Assoc. Prof. Nguyen Thu Hang
+              </li>
+              <li>
+                <strong>BSc in Pharmacy</strong> - Hanoi University of
+                Pharmacy<br />
+                <i>Supervisor</i>: Assoc. Prof. Nguyen Van Hai
+              </li>
+            </ul>
           </div>
-          <div class="span2">
-            <a href="https://www.hup.edu.vn/"
-              ><img
-                src="thumbs/logo.jpg"
-                alt="research-lab-logo"
-                width="100"
-                height="67"
-            /></a>
+
+          <div class="subsection">
+            <h3>
+              <i style="font-size: 120%">Research & Academic Experience</i>
+            </h3>
+            <ul class="timeline">
+              <li>
+                <strong>Researcher/Lecturer</strong> - Hanoi University of
+                Pharmacy (2020-now)<br />
+              </li>
+            </ul>
           </div>
-          <div class="span5">
-            <h3>Address</h3>
-            <p>
-              Department of Pharmacognosy<br />
-              Hanoi University of Pharmacy<br />
-              13-15 Le Thanh Tong<br />
-              Hoan Kiem, Hanoi<br />
-              Vietnam
-            </p>
-            <a
-              href="https://www.google.com/maps/place/Hanoi+University+of+Pharmacy/@21.0217064,105.8554811,17z/data=!3m1!4b1!4m6!3m5!1s0x3135abee82135aa5:0x42bedb896d6f3ce9!8m2!3d21.0217064!4d105.858056!16s%2Fm%2F0cplxn2?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D"
-              >Show Map</a
-            >
+
+          <div class="subsection">
+            <h3><i style="font-size: 120%">Awards & Fellowships</i></h3>
+            <ul class="timeline">
+              <li>
+                <strong>Ernst Mach Grant</strong> for PhD Studies by Austrian
+                Federal Ministry of Women, Science and Research (2025 - now)
+              </li>
+              <li>
+                Third Prize at National Youth Science and Technology Conference
+                (2024)
+              </li>
+            </ul>
           </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-left">
+          <p>&copy; <span id="year"></span> - Nguyen Van Phuong</p>
+        </div>
+
+        <div class="footer-right social-icons">
+          <a
+            href="https://scholar.google.com/citations?user=5n6GxWoAAAAJ&hl=en"
+            aria-label="Google Scholar"
+          >
+            <!-- Scholar SVG -->
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path
+                d="M12 3 1.5 9l10.5 6 8.5-4.86V17h2V9L12 3Zm0 14.2L4.3 12.7V16c0 2.7 3.3 5 7.7 5s7.7-2.3 7.7-5v-3.3L12 17.2Z"
+              ></path>
+            </svg>
+          </a>
+          <a href="https://orcid.org/0000-0002-1915-0565" aria-label="ORCID">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="10"></circle>
+              <text
+                x="12"
+                y="16"
+                text-anchor="middle"
+                font-size="10"
+                fill="currentColor"
+              >
+                iD
+              </text>
+            </svg>
+          </a>
+          <a href="https://github.com/phuongnvp" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M12 2C6 2 2 6 2 12a10 10 0 006 9.5c.5.1.7-.2.7-.5v-1.7c-2.5.5-3-1-3-1-.4-1-1-1.3-1-1.3-.8-.5.1-.5.1-.5.9.1 1.4 1 1.4 1 .8 1.4 2.2 1 2.7.8.1-.6.3-1 .6-1.2-2-.2-4-1-4-4.3 0-1 .3-1.8 1-2.5-.1-.2-.4-1.1.1-2.3 0 0 .8-.3 2.6 1a9 9 0 014.8 0c1.8-1.3 2.6-1 2.6-1 .5 1.2.2 2.1.1 2.3.6.7 1 1.5 1 2.5 0 3.3-2 4.1-4 4.3.3.3.6.8.6 1.6v2.3c0 .3.2.6.7.5A10 10 0 0022 12c0-6-4-10-10-10z"
+              ></path>
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/phuongnvp1011/"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M5.2 3.6a2.3 2.3 0 1 1 0 4.6 2.3 2.3 0 0 1 0-4.6ZM4 9h2.4v11H4V9Zm6 0h2.3v1.5h.1c.3-.6 1.3-1.7 3-1.7 3.2 0 3.8 2.1 3.8 4.9V20h-2.4v-5.5c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V20H10V9Z"
+              ></path>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
 
-    <!-- Javascript files -->
-    <script src="js/jquery-1.9.1.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-      $("#main-carousel").carousel();
-    </script>
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/main.js"></script>
   </body>
 </html>

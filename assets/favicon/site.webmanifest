@@ -1,0 +1,28 @@
+FILE: assets/favicon/site.webmanifest
+```json
+{
+  "name": "<Place Holder> — Computational Life Science",
+  "short_name": "<Place Holder>",
+  "description": "Academic website of <Place Holder>, PhD student in Computational Life Science working on molecular dynamics, chemical reasoning, and rational drug discovery.",
+  "start_url": "./../index.html",
+  "display": "standalone",
+  "background_color": "#fbfaf7",
+  "theme_color": "#1f3a5f",
+  "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ]
+}

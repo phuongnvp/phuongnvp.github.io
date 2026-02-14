@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://phuongnvp.github.io/phuongnvp.github.io/sitemap.xml
