@@ -245,35 +245,33 @@
 
     var storageKey = "vc_daily_" + NAMESPACE + "_" + COUNTER_NAME;
 
-    // Get today's date in YYYY-MM-DD format
     var today = new Date().toISOString().slice(0, 10);
-
-    // Check if this browser already counted today
     var lastCountedDate = localStorage.getItem(storageKey);
     var hasCountedToday = lastCountedDate === today;
 
-    // Decide whether to increment or just fetch current value
-    var url = hasCountedToday
-      ? "https://api.counterapi.dev/v1/" + NAMESPACE + "/" + COUNTER_NAME + "/"
-      : "https://api.counterapi.dev/v1/" +
-        NAMESPACE +
-        "/" +
-        COUNTER_NAME +
-        "/up";
-
-    fetch(url)
+    // Always call /up
+    fetch(
+      "https://api.counterapi.dev/v1/" + NAMESPACE + "/" + COUNTER_NAME + "/up",
+    )
       .then(function (res) {
         return res.json();
       })
       .then(function (data) {
         var value = data && (data.count ?? data.value);
-        el.textContent =
-          value !== undefined && value !== null ? String(value) : "—";
 
-        // If we just incremented, store today's date
-        if (!hasCountedToday) {
+        if (value === undefined || value === null) {
+          el.textContent = "—";
+          return;
+        }
+
+        // If already counted today, subtract 1 locally
+        if (hasCountedToday) {
+          value = value - 1;
+        } else {
           localStorage.setItem(storageKey, today);
         }
+
+        el.textContent = String(value);
       })
       .catch(function () {
         el.textContent = "—";
